@@ -1,0 +1,181 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #171717;
+}
+
+.container {
+    background: #e6eef6;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    box-shadow: 
+        0 4px 12px rgba(0, 0, 0, 0.3), 
+        0 0 20px 10px rgba(255, 255, 255, 0.3); 
+    width: 400px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    position: relative; 
+    display: inline-block; 
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+    z-index: 10; 
+}
+
+h2:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    position: relative; 
+    display: inline-block; 
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+    z-index: 10; 
+}
+
+h1:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#clear-task-btn {
+    background-color: #FF4136; 
+    padding: 10px; 
+}
+
+#clear-task-btn:hover {
+    background-color: #C0392B; 
+}
+
+#clear-task-btn i { 
+    font-size: 16px; 
+}
+
+.box {
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: #f8dfdf;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform:capitalize;
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.logo-container img {
+    height: 240px; 
+    width: auto;  
+}
+
+.icon-container {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.icon-container a {
+    margin-left: 10px;
+    color: #F0F8FF;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.icon-container a:hover {
+    color: #007BFF;
+}
+
+.icon-container a:nth-child(3):hover {
+    color: #FF0000; 
+}
+
+.icon-container a:nth-child(2):hover {
+    color: gray;
+}
